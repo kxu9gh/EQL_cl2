@@ -16,10 +16,10 @@ default_params = {'model_base_dir': 'results',
                   'id': 1,  # job_id to identify jobs in result metrics file, separate model_dir for each id
                   'train_val_file': 'data/F1data_train_val',  # Datafile containing training, validation data
                   'test_file': 'data/F1data_test',  # Datafile containing test data, if set to None no test data is used
-                  'epoch_factor': 1000,  # max_epochs = epoch_factor * num_h_layers
+                  'epoch_factor': 500,  # max_epochs = epoch_factor * num_h_layers
                   'num_h_layers': 1,  # number of hidden layers used in network
                   'generate_symbolic_expr': True,  # saves final network as a latex png and symbolic graph
-                  'kill_summaries': False,  # reduces data generation, recommended when creating many jobs
+                  'kill_summaries': True,  # reduces data generation, recommended when creating many jobs
                   }
 
 
